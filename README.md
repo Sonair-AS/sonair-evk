@@ -1,7 +1,6 @@
 # sonair-evk
 
-![image](https://github.com/user-attachments/assets/90a13feb-4978-40c9-b9a4-e35ac17033ca)
+![image](https://github.com/user-attachments/assets/90a13feb-4978-40c9-b9a4-e35ac17033ca | width)
 
 
-
-Public respository for examples and documentation for sonair-evk
+Public repository for examples and documentation for sonair-evk
