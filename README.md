@@ -55,7 +55,7 @@ The CoAP server is located in the
 [ros/sonair_evk/sonar_evk/coap_server.py](https://github.com/Sonair-AS/sonair-evk/blob/main/ros/sonair_evk/sonair_evk/coap_server.py).
 The functionality of the CoAP server coarsely consist of four steps:
 
-1. We creat a socket on the correct port (that is currently hardcoded to 5683)
+1. We create a socket on the correct port (that is currently hardcoded to 5683)
    and listen for messages.
 
 2. We extract the CoAP specific header and assert that it agrees with what the
