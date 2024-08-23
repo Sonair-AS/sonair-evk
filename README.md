@@ -50,3 +50,22 @@ how the messages sent from the sonair-evk unit can be converted to a pointcloud.
 In a production setting it is probably better to use a mature CoAP server, like
 e.g. [aiocoap](https://aiocoap.readthedocs.io/en/latest/). We have verified that
 the setup also works with aiocoap.
+
+The CoAP server is located in the
+[ros/sonair_evk/sonar_evk/coap_server.py](./ros/sonair_evk/sonar_evk/coap_server.py).
+The functionality of the CoAP server coarsely consist of four steps:
+
+1. We creat a socket on the correct port (that is currently hardcoded to 5683)
+   and listen for messages.
+
+2. We extract the CoAP specific header and assert that it agrees with what the
+   sonair-evk unit sends.
+
+3. When all the CoAP metadata has been processed the payload from the sonair-evk
+   unit is passed to a free function which converts it to a pointcloud:
+   [ros/sonair_evk/sonar_evk/convert_coap_payload_to_pointcloud.py](./ros/sonair_evk/sonar_evk/convert_coap_payload_to_pointcloud.py).
+
+4. The ROS pointcloud publisher callback is invoked with the pointcloud.
+
+
+
