@@ -63,7 +63,7 @@ The functionality of the CoAP server coarsely consist of four steps:
 
 3. When all the CoAP metadata has been processed the payload from the sonair-evk
    unit is passed to a free function which converts it to a pointcloud:
-   [ros/sonair_evk/sonar_evk/convert_coap_payload_to_pointcloud.py](./ros/sonair_evk/sonar_evk/convert_coap_payload_to_pointcloud.py).
+   [ros/sonair_evk/sonar_evk/convert_coap_payload_to_pointcloud.py](https://github.com/Sonair-AS/sonair-evk/blob/main/ros/sonair_evk/sonair_evk/convert_coap_payload_to_pointcloud.py).
 
 4. The ROS pointcloud publisher callback is invoked with the pointcloud.
 
