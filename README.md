@@ -69,3 +69,15 @@ The functionality of the CoAP server coarsely consist of four steps:
 
 
 
+## Docker
+We currently run the ROS pointcloude publisher in a docker container. The docker
+file we use can be found in
+[ros/Dockerfile.sonair-evk](https://github.com/Sonair-AS/sonair-evk/blob/main/ros/Dockerfile.sonair-evk),
+which can be used as an example.
+
+```
+bash% cd ros
+bash% docker build -t ros-sonair-evk -f Dockerfile.sonair-evk .
+bash% docker run -p 5683:5683/udp -p 8765:8765 --rm -it ros-sonair-evk
+```
+
