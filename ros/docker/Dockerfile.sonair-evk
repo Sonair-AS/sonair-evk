@@ -1,0 +1,20 @@
+FROM ros:iron-ros-base@sha256:0378be3497950bc286f262175e4463b50fdb7636cb9e002de58ed88710108da7
+# To build: docker build -t ros-sonair-evk -f Dockerfile.sonair-evk .
+# To run: docker run -p 5683:5683/udp -p 8765:8765 --rm -it ros-sonair-evk
+
+RUN apt-get update && apt-get install -y python3-pip ros-iron-foxglove-bridge
+# sudo apt-get install
+
+# Install sonair_evk requirements
+WORKDIR /sonair/ros
+COPY sonair_evk/requirements.txt sonair_evk/requirements.txt
+RUN pip3 install -r sonair_evk/requirements.txt
+
+# Copy ros driver
+COPY sonair_evk sonair_evk
+COPY sonair_evk/start_ros.sh .
+
+RUN . /opt/ros/iron/setup.sh && colcon build --symlink-install --packages-select sonair_evk
+RUN . install/local_setup.sh
+RUN echo ". /sonair/ros/install/local_setup.bash" >> "/root/.bashrc"
+
