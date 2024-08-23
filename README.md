@@ -9,14 +9,14 @@ receive pointcloud data from the sonair-evk; and in particular it should serve
 as an example to build upon if you wish to integrate the sonair-evk pointcloud
 into an internal system. In order to visualize the pointcloud from a standalone
 sonair-evk unit you can just use FoxGlove endpoint as described in the
-sonair-evk Instructions for Use document.
+sonair-evk [Instructions for Use](https://sonair.com/products/evalkit/) document.
 
 ## The protocol
 The sonair-evk unit will publish the pointcloud, along with a status flag as
 [CoAP](https://en.wikipedia.org/wiki/Constrained_Application_Protocol) messages
-over UDP. The IP address for these packages is configured by the user with
-sonair configuration tool. When used with a ROS publishing node we
-currently have an arcitecture which looks like this:
+over UDP. The IP address for these packages is configured by the user 
+on the Sonair Evaluation Kit Configuration page. When used with a ROS publishing 
+node we currently have an arcitecture which looks like this:
 
 ```
 

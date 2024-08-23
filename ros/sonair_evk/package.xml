@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>Ros driver for Sonair evalkit</description>
   <maintainer email="hello@sonair.com">Sonair AS</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT License</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
