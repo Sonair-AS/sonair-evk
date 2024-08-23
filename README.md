@@ -52,7 +52,7 @@ e.g. [aiocoap](https://aiocoap.readthedocs.io/en/latest/). We have verified that
 the setup also works with aiocoap.
 
 The CoAP server is located in the
-[ros/sonair_evk/sonar_evk/coap_server.py](https://github.com/SonairAS/sonair-evk/tree/main/ros/sonair_evk/sonar_evk/coap_server.py).
+[ros/sonair_evk/sonar_evk/coap_server.py](https://github.com/SonairAS/sonair-evk/blob/main/ros/sonair_evk/sonar_evk/coap_server.py).
 The functionality of the CoAP server coarsely consist of four steps:
 
 1. We creat a socket on the correct port (that is currently hardcoded to 5683)
