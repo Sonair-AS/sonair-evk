@@ -9,13 +9,13 @@ receive pointcloud data from the sonair-evk; and in particular it should serve
 as an example to build upon if you wish to integrate the sonair-evk pointcloud
 into an internal system. In order to visualize the pointcloud from a standalone
 sonair-evk unit you can just use FoxGlove endpoint as described in the
-sonair-evk instructions for use[....].
+sonair-evk Instructions for Use document.
 
 ## The protocol
 The sonair-evk unit will publish the pointcloud, along with a status flag as
 [CoAP](https://en.wikipedia.org/wiki/Constrained_Application_Protocol) messages
 over UDP. The IP address for these packages is configured by the user with
-sonair configuration tool [....]. When used with a ROS publishing node we
+sonair configuration tool. When used with a ROS publishing node we
 currently have an arcitecture which looks like this:
 
 ```
@@ -78,6 +78,6 @@ which can be used as an example.
 ```
 bash% cd ros
 bash% docker build -t ros-sonair-evk -f Dockerfile.sonair-evk .
-bash% docker run -p 5683:5683/udp -p 8765:8765 --rm -it ros-sonair-evk
+bash% docker run -p 5683:5683/udp -p 8765:8765 --rm ros-sonair-evk
 ```
 
