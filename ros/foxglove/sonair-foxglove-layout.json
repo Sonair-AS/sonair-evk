@@ -1,20 +1,19 @@
 {
   "configById": {
-    "3D!1y5f3hu": {
+    "3D!30jydzc": {
       "cameraState": {
+        "distance": 12,
         "perspective": true,
-        "distance": 35.8652730719041,
-        "phi": 69.36669422327667,
-        "thetaOffset": 145.1139534854572,
-        "targetOffset": [
-          0.6432074702129419,
-          0.43666001597953447,
-          -1.0002366551683523e-15
-        ],
+        "phi": 65,
         "target": [
           0,
           0,
           0
+        ],
+        "targetOffset": [
+          3,
+          0.5,
+          -9.946415750568574e-16
         ],
         "targetOrientation": [
           0,
@@ -22,18 +21,19 @@
           0,
           1
         ],
-        "fovy": 34,
-        "near": 2.335,
-        "far": 10947.024,
+        "thetaOffset": 55,
+        "fovy": 35,
+        "near": 1,
+        "far": 100000,
         "logDepth": true
       },
       "followMode": "follow-position",
       "scene": {
         "transforms": {
           "showLabel": false,
-          "lineWidth": 1.6,
-          "axisScale": 2.0,
-          "editable": false
+          "lineWidth": 1,
+          "editable": false,
+          "axisScale": 1
         },
         "syncCamera": false,
         "meshUpAxis": "y_up"
@@ -146,10 +146,9 @@
         "/adar/pointcloud": {
           "visible": true,
           "colorField": "y",
-          "colorMode": "flat",
+          "colorMode": "gradient",
           "colorMap": "turbo",
-          "minValue": -0.5,
-          "maxValue": 1.5,
+          "maxValue": 1,
           "gradient": [
             "#0e00ffff",
             "#ff0000ff"
@@ -157,7 +156,8 @@
           "pointSize": 10,
           "decayTime": 0,
           "flatColor": "#ff0000ff",
-          "stixelsEnabled": false
+          "stixelsEnabled": false,
+          "minValue": -1
         },
         "/lidar/pointcloud": {
           "visible": true,
@@ -408,53 +408,21 @@
           "order": 1,
           "frameId": "base_footprint"
         },
-        "db76299f-d54d-4eaa-a101-52b87fc35df7": {
-          "visible": false,
-          "frameLocked": true,
-          "label": "URDF",
-          "instanceId": "db76299f-d54d-4eaa-a101-52b87fc35df7",
-          "layerId": "foxglove.Urdf",
-          "sourceType": "url",
-          "url": "",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Testing\\box_urdf.urdf",
-          "parameter": "",
-          "topic": "",
-          "framePrefix": "",
-          "displayMode": "auto",
-          "fallbackColor": "#3a4139",
-          "order": 2
-        },
-        "ef5b7708-5f0c-4325-b71c-239403f435a6": {
-          "visible": false,
-          "frameLocked": true,
-          "label": "URDF",
-          "instanceId": "ef5b7708-5f0c-4325-b71c-239403f435a6",
-          "layerId": "foxglove.Urdf",
-          "sourceType": "filePath",
-          "url": "",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Testing\\transducer_urdf.urdf",
-          "parameter": "",
-          "topic": "",
-          "framePrefix": "",
-          "displayMode": "auto",
-          "fallbackColor": "#fffa82",
-          "order": 3
-        },
-        "bb9bab2d-abee-41a8-8bf1-7f575cbc3cb1": {
+        "a25b4c4c-cabf-4dcb-896c-6162a7bb970f": {
           "visible": true,
           "frameLocked": true,
           "label": "URDF",
-          "instanceId": "bb9bab2d-abee-41a8-8bf1-7f575cbc3cb1",
+          "instanceId": "a25b4c4c-cabf-4dcb-896c-6162a7bb970f",
           "layerId": "foxglove.Urdf",
-          "sourceType": "filePath",
-          "url": "https://raw.githubusercontent.com/simen-bergsvik/test/main/test_setup.urdf",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Sonair\\ros\\sonair_evk_dev\\adar_model.urdf",
+          "sourceType": "url",
+          "url": "https://raw.githubusercontent.com/Sonair-AS/sonair-evk/main/ros/foxglove/sonair_evk_model.urdf",
+          "filePath": "",
           "parameter": "",
           "topic": "",
           "framePrefix": "",
           "displayMode": "auto",
-          "fallbackColor": "#45ab32",
-          "order": 4
+          "fallbackColor": "#ffffff",
+          "order": 5
         }
       },
       "publish": {
@@ -489,21 +457,20 @@
         }
       ]
     },
-    "3D!25l9elx": {
+    "3D!4kn3ylf": {
       "cameraState": {
-        "perspective": true,
-        "distance": 46.35068057977976,
-        "phi": 66.52298919853146,
-        "thetaOffset": 3.9234913272392786,
-        "targetOffset": [
-          -6.390493653296801,
-          19.776183093718963,
-          -4.1145712236219074e-16
-        ],
+        "distance": 9.999999999999996,
+        "perspective": false,
+        "phi": 30.201426974671403,
         "target": [
           0,
           0,
           0
+        ],
+        "targetOffset": [
+          2,
+          -3.746573956381363e-19,
+          -9.933167183264372e-16
         ],
         "targetOrientation": [
           0,
@@ -511,25 +478,26 @@
           0,
           1
         ],
+        "thetaOffset": 90.00000000000006,
         "fovy": 34,
-        "near": 2.335,
-        "far": 10947.024,
+        "near": 1,
+        "far": 100000,
         "logDepth": true
       },
-      "followMode": "follow-pose",
+      "followMode": "follow-position",
       "scene": {
         "transforms": {
           "showLabel": false,
-          "lineWidth": 2,
-          "axisScale": 0.534,
-          "editable": false
+          "lineWidth": 1,
+          "editable": false,
+          "axisScale": 1
         },
         "syncCamera": false,
         "meshUpAxis": "y_up"
       },
       "transforms": {
         "frame:base_link": {
-          "visible": true
+          "visible": false
         },
         "frame:adar_link": {
           "visible": false,
@@ -540,7 +508,7 @@
           ]
         },
         "frame:adar": {
-          "visible": false,
+          "visible": true,
           "rpyCoefficient": [
             null,
             null,
@@ -559,7 +527,7 @@
           "visible": false
         },
         "frame:base_footprint": {
-          "visible": true
+          "visible": false
         },
         "frame:camera_color_frame": {
           "visible": false
@@ -635,18 +603,18 @@
         "/adar/pointcloud": {
           "visible": true,
           "colorField": "y",
-          "colorMode": "flat",
+          "colorMode": "gradient",
           "colorMap": "turbo",
-          "minValue": -0.5,
-          "maxValue": 1.5,
+          "maxValue": 1,
           "gradient": [
             "#0e00ffff",
             "#ff0000ff"
           ],
+          "pointSize": 10,
           "decayTime": 0,
           "flatColor": "#ff0000ff",
           "stixelsEnabled": false,
-          "pointSize": 10
+          "minValue": -1
         },
         "/lidar/pointcloud": {
           "visible": true,
@@ -858,11 +826,19 @@
           "pointSize": 10,
           "flatColor": "#0017ffff"
         },
+        "/adar/ignore_zone/Marker": {
+          "visible": true
+        },
+        "/adar/stop_zone/Marker": {
+          "visible": true
+        },
         "/adar/ignore_zones/Marker": {
           "visible": true
         },
         "/adar/stop_zones/Marker": {
-          "visible": true
+          "visible": true,
+          "color": "#ee2a2a45",
+          "showOutlines": true
         }
       },
       "layers": {
@@ -886,55 +862,24 @@
             0,
             0
           ],
-          "order": 1
+          "order": 1,
+          "frameId": "base_footprint"
         },
-        "db76299f-d54d-4eaa-a101-52b87fc35df7": {
-          "visible": false,
-          "frameLocked": true,
-          "label": "URDF",
-          "instanceId": "db76299f-d54d-4eaa-a101-52b87fc35df7",
-          "layerId": "foxglove.Urdf",
-          "sourceType": "filePath",
-          "url": "",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Testing\\box_urdf.urdf",
-          "parameter": "",
-          "topic": "",
-          "framePrefix": "",
-          "displayMode": "auto",
-          "fallbackColor": "#3a4139",
-          "order": 2
-        },
-        "ef5b7708-5f0c-4325-b71c-239403f435a6": {
-          "visible": false,
-          "frameLocked": true,
-          "label": "URDF",
-          "instanceId": "ef5b7708-5f0c-4325-b71c-239403f435a6",
-          "layerId": "foxglove.Urdf",
-          "sourceType": "filePath",
-          "url": "",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Testing\\transducer_urdf.urdf",
-          "parameter": "",
-          "topic": "",
-          "framePrefix": "",
-          "displayMode": "auto",
-          "fallbackColor": "#fffa82",
-          "order": 3
-        },
-        "bb9bab2d-abee-41a8-8bf1-7f575cbc3cb1": {
+        "a25b4c4c-cabf-4dcb-896c-6162a7bb970f": {
           "visible": true,
           "frameLocked": true,
           "label": "URDF",
-          "instanceId": "bb9bab2d-abee-41a8-8bf1-7f575cbc3cb1",
+          "instanceId": "a25b4c4c-cabf-4dcb-896c-6162a7bb970f",
           "layerId": "foxglove.Urdf",
-          "sourceType": "filePath",
-          "url": "https://raw.githubusercontent.com/simen-bergsvik/test/main/test_setup.urdf",
-          "filePath": "C:\\Users\\SimenBergsvik\\Documents\\Sonair\\ros\\sonair_evk_dev\\adar_model_stolpe.urdf",
+          "sourceType": "url",
+          "url": "https://raw.githubusercontent.com/Sonair-AS/sonair-evk/main/ros/foxglove/sonair_evk_model.urdf",
+          "filePath": "",
           "parameter": "",
           "topic": "",
           "framePrefix": "",
           "displayMode": "auto",
-          "fallbackColor": "#45ab32",
-          "order": 4
+          "fallbackColor": "#ffffff",
+          "order": 5
         }
       },
       "publish": {
@@ -948,13 +893,6 @@
       },
       "imageMode": {},
       "followTf": "base_footprint"
-    },
-    "DiagnosticSummary!1kt745o": {
-      "minLevel": 0,
-      "pinnedIds": [],
-      "hardwareIdFilter": "",
-      "topicToRender": "/diagnostics",
-      "sortByLevel": true
     }
   },
   "globalVariables": {},
@@ -964,18 +902,12 @@
   },
   "layout": {
     "first": {
-      "first": "3D!1y5f3hu",
-      "second": "Indicator!7duaan",
-      "direction": "column",
-      "splitPercentage": 84.91620111731844
+      "first": "3D!30jydzc",
+      "second": "3D!4kn3ylf",
+      "direction": "row"
     },
-    "second": {
-      "first": "3D!25l9elx",
-      "second": "DiagnosticSummary!1kt745o",
-      "direction": "column",
-      "splitPercentage": 84.77653631284916
-    },
-    "direction": "row",
-    "splitPercentage": 46.331452026680346
+    "second": "Indicator!7duaan",
+    "direction": "column",
+    "splitPercentage": 91.29793510324484
   }
 }
