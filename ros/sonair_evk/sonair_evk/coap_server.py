@@ -1,3 +1,6 @@
+# Copyright (C), 2024, Sonair AS
+#
+# This software is free software, licensed according to the MIT License:https://en.wikipedia.org/wiki/MIT_License 
 from typing import Tuple, List
 
 import struct

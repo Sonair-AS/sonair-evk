@@ -1,0 +1,3 @@
+The sonair-foxglove-layout.json file is a layout that can be imported into
+foxglove (http://foxglove.dev) with the recommended setup for viewing the
+pointcloud published by the eval kit.

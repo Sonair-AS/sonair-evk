@@ -19,7 +19,7 @@ setup(
     maintainer="root",
     maintainer_email="root@todo.todo",
     description="TODO: Package description",
-    license="TODO: License declaration",
+    license="MIT License",
     entry_points={
         "console_scripts": [
             "pointcloud = sonair_evk.point_cloud_publisher:main",
