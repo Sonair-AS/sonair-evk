@@ -32,7 +32,7 @@
         "transforms": {
           "showLabel": false,
           "lineWidth": 1.6,
-          "axisScale": 10.092,
+          "axisScale": 2.0,
           "editable": false
         },
         "syncCamera": false,
@@ -70,7 +70,7 @@
           "visible": false
         },
         "frame:base_footprint": {
-          "visible": true
+          "visible": false
         },
         "frame:camera_color_frame": {
           "visible": false
@@ -379,7 +379,9 @@
           "visible": true
         },
         "/adar/stop_zones/Marker": {
-          "visible": true
+          "visible": true,
+          "color": "#ee2a2a45",
+          "showOutlines": true
         }
       },
       "layers": {
