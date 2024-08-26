@@ -16,8 +16,8 @@ setup(
     ],
     install_requires=["setuptools", "numpy"],
     zip_safe=True,
-    maintainer="root",
-    maintainer_email="root@todo.todo",
+    maintainer="Joakim Hove",
+    maintainer_email="hello@sonair.com",
     description="TODO: Package description",
     license="MIT License",
     entry_points={

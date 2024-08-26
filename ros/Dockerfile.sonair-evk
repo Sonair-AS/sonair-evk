@@ -17,4 +17,5 @@ COPY sonair_evk/start_ros.sh .
 RUN . /opt/ros/iron/setup.sh && colcon build --symlink-install --packages-select sonair_evk
 RUN . install/local_setup.sh
 RUN echo ". /sonair/ros/install/local_setup.bash" >> "/root/.bashrc"
-ENTRYPOINT ["/sonair/ros/start_ros.sh"]
+ENTRYPOINT ["bash"]
+CMD ["/sonair/ros/start_ros.sh"]
