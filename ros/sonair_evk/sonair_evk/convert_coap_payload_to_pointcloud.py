@@ -1,6 +1,7 @@
 # Copyright (C), 2024, Sonair AS
 #
 # This software is free software, licensed according to the MIT License:https://en.wikipedia.org/wiki/MIT_License import struct
+import struct
 from typing import Tuple
 
 from .sonair_evk_status import SonairEvkStatus
