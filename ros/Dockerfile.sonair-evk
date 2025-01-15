@@ -14,6 +14,8 @@ RUN pip3 install -r sonair_evk/requirements.txt
 COPY sonair_evk sonair_evk
 COPY sonair_evk/start_ros.sh .
 
+RUN sudo apt-get install dos2unix
+RUN dos2unix start_ros.sh
 RUN . /opt/ros/iron/setup.sh && colcon build --symlink-install --packages-select sonair_evk
 RUN . install/local_setup.sh
 RUN echo ". /sonair/ros/install/local_setup.bash" >> "/root/.bashrc"
