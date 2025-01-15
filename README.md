@@ -78,6 +78,6 @@ which can be used as an example.
 ```
 bash% cd ros
 bash% docker build -t ros-sonair-evk -f Dockerfile.sonair-evk .
-bash% docker run -p 5683:5683/udp -p 8765:8765 --rm ros-sonair-evk
+bash% docker run -p 5683:5683/udp -p 8765:8765 -it --rm ros-sonair-evk
 ```
 
